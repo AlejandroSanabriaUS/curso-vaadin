@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+ </head>
+ <body>
+  <vaadin-form-layout size-full margin>
+   <vaadin-text-field required-indicator-visible caption="Nombre" _id="nombre"></vaadin-text-field>
+   <vaadin-text-field caption="Apellido" _id="apellido"></vaadin-text-field>
+   <vaadin-text-field caption="Correo" _id="email"></vaadin-text-field>
+   <vaadin-date-field caption="Fecha de Nacimiento" _id="fechaNacimiento"></vaadin-date-field>
+   <vaadin-native-select caption="Estado" data-item-type="es.ayesa.vaadin.ClienteEstado" _id="estado"></vaadin-native-select>
+   <vaadin-horizontal-layout>
+    <vaadin-button style-name="primary" plain-text _id="guardar">
+      Guardar 
+    </vaadin-button>
+    <vaadin-button plain-text _id="borrar">
+      Borrar 
+    </vaadin-button>
+   </vaadin-horizontal-layout>
+  </vaadin-form-layout>
+ </body>
+</html>
